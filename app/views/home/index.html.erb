@@ -1,0 +1,692 @@
+<main>
+  <aside class="sidebar" data-sidebar>
+    <div class="sidebar-info">
+      <figure class="avatar-box">
+        <%= image_tag 'Abhishek-Rana.jpeg', alt: 'Abhishek Rana', width: 80 %>
+      </figure>
+      <div class="info-content">
+        <h1 class="name" title="Abhishek Rana">Abhishek Rana</h1>
+        <p class="title">Software Engineer</p>
+      </div>
+      <button class="info_more-btn" data-sidebar-btn aria-expanded="false">
+        <span>Show Contacts</span>
+        <ion-icon name="chevron-down"></ion-icon>
+      </button>
+    </div>
+    <div class="sidebar-info_more">
+      <div class="separator"></div>
+      <ul class="contacts-list">
+        <li class="contact-item">
+          <div class="icon-box">
+            <ion-icon name="mail-outline"></ion-icon>
+          </div>
+          <div class="contact-info">
+            <b><p class="contact-title">Email</p></b>
+            <a href="mailto:abhishekgugle@gmail.com" class="contact-link">abhishekgugle@gmail.com</a>
+          </div>
+        </li>
+        <li class="contact-item">
+          <div class="icon-box">
+            <ion-icon name="phone-portrait-outline"></ion-icon>
+          </div>
+          <div class="contact-info">
+            <b><p class="contact-title">Phone</p></b>
+            <a href="tel:+9131640742" class="contact-link">9131640742</a>
+          </div>
+        </li>
+        <li class="contact-item">
+          <div class="icon-box">
+            <ion-icon name="location-outline"></ion-icon>
+          </div>
+          <div class="contact-info">
+            <b><p class="contact-title">Location</p></b>
+            <address>Indore, MP, India</address>
+          </div>
+        </li>
+      </ul>
+      <div class="separator"></div>
+      <ul class="social-list">
+        <li class="social-item">
+          <%= link_to 'https://github.com/abhishek11898', class: 'social-link', target:"blank" do %>
+            <ion-icon name="logo-github"></ion-icon>
+          <%end%>
+        </li>
+        <li class="social-item">
+          <%= link_to 'https://www.linkedin.com/in/abhishek-rana-0060641a2', class: 'social-link', target:"blank" do %>
+            <ion-icon name="logo-linkedin"></ion-icon>
+          <%end%>
+        </li>
+      </ul>
+      <div class="ct-parsonal-info-btn">
+        <%= link_to 'https://drive.google.com/file/d/1FA2Vzt-I4j1P3gFLLmxJs0L6isDg-rwQ/view?usp=drive_link', class: 'btn-1 shadow', target:"blank" do %>
+          <span class="cv-icon-text">
+            <ion-icon name="download"></ion-icon> Download CV
+          </span>
+        <%end%>
+      </div>
+    </div>
+  </aside>
+
+  <div class="main-content">
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <%
+=begin%>
+  <li class="navbar-item">
+    <button class="navbar-link" data-nav-link>Blog</button>
+  </li> 
+<%
+=end%>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+    <article class="about active" data-page="about">
+      <header>
+        <h2 class="h2 article-title">About Me</h2>
+      </header>
+
+      <section class="about-text">
+        <b><i>Hello, I’m Abhishek Rana, a Full Stack Software Engineer with 3 years of experience in developing innovative web applications. 
+          My journey began with a passion for technology and has led me to specialize in Ruby on Rails, React, and JavaScript. 
+          I thrive on transforming complex ideas into seamless digital solutions. Outside of my tech pursuits, 
+          I embrace a holistic lifestyle through meditation, dance, and music, which fuels my creativity and problem-solving skills. 
+          I’m dedicated to delivering excellence in every project while continuously growing both professionally and personally.
+        </b></i>
+      </section>
+
+      <section class="service">
+        <h3 class="h3 service-title">What I Do</h3>
+        <ul class="service-list">
+          <li class="service-item">
+            <div class="service-icon-box">
+              <%= image_tag "icon-design.svg", 
+                alt: "Mobile App Icon", 
+                width: "40", 
+                data: { testimonials_avatar: true } 
+              %>
+            </div>
+            <div class="service-content-box">
+              <h4 class="h4 service-item-title">Full Stack Development</h4>
+              <p class="service-item-text">
+                Leverage my expertise in both front-end and back-end technologies to build comprehensive and scalable web applications. 
+                Whether you need a complete solution from scratch or enhancements to existing systems, 
+                I handle every aspect of development to create seamless, integrated solutions.
+              </p>
+            </div>
+          </li>
+
+          <li class="service-item">
+            <div class="service-icon-box">
+              <%= image_tag "icon-dev.svg", 
+                  alt: "Web Development Icon", 
+                  width: "40", 
+                  data: { testimonials_avatar: true } 
+                %>
+            </div>
+            <div class="service-content-box">
+              <h4 class="h4 service-item-title">Custom Web Solutions</h4>
+              <p class="service-item-text">
+                Transform your ideas into high-performance web applications with tailor-made solutions that fit your unique needs. 
+                From sleek designs to robust functionality, I craft custom websites that drive your business forward and deliver exceptional user experiences.
+              </p>
+            </div>
+          </li>
+
+          <li class="service-item">
+            <div class="service-icon-box">
+              <%= image_tag "icon-app.svg", 
+                alt: "Mobile App Icon", 
+                width: "40", 
+                data: { testimonials_avatar: true } 
+              %>
+            </div>
+            <div class="service-content-box">
+              <h4 class="h4 service-item-title">API Integration</h4>
+              <p class="service-item-text">
+                Boost your application's capabilities by integrating third-party APIs and services. 
+                I ensure smooth and secure connectivity between your systems and external platforms, enhancing functionality and expanding your web application's reach and efficiency.
+              </p>
+            </div>
+          </li>
+
+          <li class="service-item">
+            <div class="service-icon-box">
+              <%= image_tag "icon-photo.svg", 
+                alt: "Photography Icon", 
+                width: "40", 
+                data: { testimonials_avatar: true } 
+              %>
+            </div>
+            <div class="service-content-box">
+              <h4 class="h4 service-item-title">Website Maintenance & Optimization</h4>
+              <p class="service-item-text">
+                Ensure your website runs smoothly and efficiently with top-notch maintenance and optimization services. 
+                I focus on enhancing performance, fixing issues, and implementing the latest best practices to keep your site up-to-date and competitive in today’s digital landscape.
+              </p>
+            </div>
+          </li>
+
+          <li class="service-item">
+            <div class="service-icon-box">
+              <%= image_tag "icon-photo.svg", 
+                alt: "Photography Icon", 
+                width: "40", 
+                data: { testimonials_avatar: true } 
+              %>
+            </div>
+            <div class="service-content-box">
+              <h4 class="h4 service-item-title">Consulting & Strategy</h4>
+              <p class="service-item-text">
+               Unlock your project's potential with expert consulting and strategic planning. I offer insights and guidance to refine your vision, optimize your approach, and achieve your goals effectively. 
+               Let’s collaborate to develop a roadmap that drives success and maximizes your project's impact.
+              </p>
+            </div>
+          </li>
+
+        </ul>
+      </section>
+
+      <%
+=begin%>
+ <section class="testimonials">
+        <h3 class="h3 testimonials-title">Testimonials</h3>
+        <ul class="testimonials-list has-scrollbar">
+          <li class="testimonials-item">
+            <div class="content-card" data-testimonials-item>
+              <figure class="testimonials-avatar-box">
+                <%= image_tag "avatar-1.png", 
+                  alt: "Daniel Lewis", 
+                  width: "60", 
+                  data: { testimonials_avatar: true } 
+                %>
+              </figure>
+              <h4 class="h4 testimonials-item-title" data-testimonials-title>Daniel Lewis</h4>
+              <div class="testimonials-text" data-testimonials-text>
+                <p>
+                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has extensive experience and is very attentive to client needs.
+                </p>
+              </div>
+            </div>
+          </li>
+
+          <li class="testimonials-item">
+            <div class="content-card" data-testimonials-item>
+              <figure class="testimonials-avatar-box">
+                <%= image_tag "avatar-2.png", 
+                  alt: "Jessica Miller", 
+                  width: "60", 
+                  data: { testimonials_avatar: true } 
+                %>
+              </figure>
+              <h4 class="h4 testimonials-item-title" data-testimonials-title>Jessica Miller</h4>
+              <div class="testimonials-text" data-testimonials-text>
+                <p>
+                  Richard was hired to create a corporate identity. We were very pleased with the work done. She is highly experienced and attentive to client requirements.
+                </p>
+              </div>
+            </div>
+          </li>
+
+          <li class="testimonials-item">
+            <div class="content-card" data-testimonials-item>
+              <figure class="testimonials-avatar-box">
+              <%= image_tag "avatar-3.png", 
+                alt: "Emily Evans", 
+                width: "60", 
+                data: { testimonials_avatar: true } 
+              %>
+              </figure>
+              <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily Evans</h4>
+              <div class="testimonials-text" data-testimonials-text>
+                <p>
+                  Richard was hired to create a corporate identity. We were very pleased with the outcome. She has a wealth of experience and is highly attentive to client needs.
+                </p>
+              </div>
+            </div>
+          </li>
+
+          <li class="testimonials-item">
+            <div class="content-card" data-testimonials-item>
+              <figure class="testimonials-avatar-box">
+                <%= image_tag "avatar-4.png", 
+                  alt: "Henry William", 
+                  width: "80", 
+                  data: { testimonials_avatar: true } 
+                %>
+              </figure>
+              <h4 class="h4 testimonials-item-title" data-testimonials-title>Henry William</h4>
+              <div class="testimonials-text" data-testimonials-text>
+                <p>
+                  Richard was hired to create a corporate identity. We were highly satisfied with the work. She possesses significant experience and a keen understanding of client needs.
+                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <div class="modal-container" data-modal-container>
+        <div class="overlay" data-overlay></div>
+        <section class="testimonials-modal">
+          <button class="modal-close-btn" data-modal-close-btn>
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+          <div class="modal-img-wrapper">
+            <figure class="modal-avatar-box">
+            <%= image_tag "avatar-1.png", 
+              alt: "Daniel Lewis's profile picture", 
+              width: "80", 
+              data: { modal_img: true } 
+            %>
+            </figure>
+            <%= image_tag 'icon-quote.svg', alt: 'Client Logo', loading: "lazy", width: "80"%>
+          </div>
+          <div class="modal-content">
+            <h4 class="h3 modal-title" data-modal-title>Daniel Lewis</h4>
+            <time datetime="2021-06-14">14 June, 2021</time>
+            <div data-modal-text>
+              <p>
+                Richard was hired to create a corporate identity. We were very pleased with the work done. She has significant experience and is very attentive to client needs.
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <section class="clients">
+        <h3 class="h3 clients-title">Clients</h3>
+        <ul class="clients-list has-scrollbar">
+          <li class="clients-item">
+            <a href="#">
+              <%= image_tag 'logo-1-color.png', alt: 'Client Logo', loading: "lazy"%>
+            </a>
+          </li>
+          <li class="clients-item">
+            <a href="#">
+              <%= image_tag 'logo-2-color.png', alt: 'Client Logo', loading: "lazy"%>
+            </a>
+          </li>
+          <li class="clients-item">
+            <a href="#">
+              <%= image_tag 'logo-3-color.png', alt: 'Client Logo', loading: "lazy"%>
+            </a>
+          </li>
+          <li class="clients-item">
+            <a href="#">
+              <%= image_tag 'logo-4-color.png', alt: 'Client Logo', loading: "lazy"%>
+            </a>
+          </li>
+          <li class="clients-item">
+            <a href="#">
+              <%= image_tag 'logo-5-color.png', alt: 'Client Logo',  loading: "lazy"%>
+            </a>
+          </li>
+          <li class="clients-item">
+            <a href="#">
+              <%= image_tag 'logo-6-color.png', alt: 'Client Logo', loading: "lazy"%>
+            </a>
+          </li>
+        </ul>
+      </section> 
+<%
+=end%>
+    </article>
+
+    <article class="resume" data-page="resume">
+      <header>
+        <h2 class="h2 article-title">Resume</h2>
+      </header>
+      <section class="timeline">
+        <div class="title-wrapper">
+          <div class="icon-box">
+            <ion-icon name="book-outline"></ion-icon>
+          </div>
+          <h3 class="h3">Education</h3>
+        </div>
+        <ol class="timeline-list">
+          <li class="timeline-item">
+            <h4 class="h4 timeline-item-title">Advance Academy, Indore(MP)</h4>
+            <div>10<sup>th</sup> Standard</div>
+            <span>2014 — 2015</span>            
+          </li>
+          <li class="timeline-item">
+            <h4 class="h4 timeline-item-title">Aadarsh Malwa, Shajapur(MP)</h4>
+            <div>12<sup>th</sup> Standard</div>
+            <span>2016 — 2017</span>
+          </li>
+          <li class="timeline-item">
+            <h4 class="h4 timeline-item-title">Rajiv Gandhi Proudyogiki Vishwavidyalaya(MP) </h4>
+            <p class="timeline-text">
+              Bachelor of Technology in Computer Science
+            </p>
+            <span>2017 — 2021</span>
+          </li>
+        </ol>
+      </section>
+      <section class="timeline">
+        <div class="title-wrapper">
+          <div class="icon-box">
+            <ion-icon name="book-outline"></ion-icon>
+          </div>
+          <h3 class="h3">Experience</h3>
+        </div>
+        <ol class="timeline-list">
+          <li class="timeline-item">
+            <h4 class="h4 timeline-item-title">Freelance Software Engineer</h4>
+            <span>September 2023 — Present</span>
+            <p class="timeline-text">
+            </p>
+          </li>
+          <li class="timeline-item">
+            <h4 class="h4 timeline-item-title">Full Stack Sofware Engineer</h4>
+            <span>November 2021 - September 2023</span>
+            <p class="timeline-text">
+              <%= link_to 'Gems Essence Infotech Pvt Ltd, Indore(MP)', 'https://gemsessence.com/', target: '_blank' %>
+            </p>
+          </li>
+          <li class="timeline-item">
+            <h4 class="h4 timeline-item-title">Software Engineer (Trainee)</h4>
+            <span>September 2021 — November 2021</span>
+            <p class="timeline-text">
+              <%= link_to 'Gems Essence Infotech Pvt Ltd, Indore(MP)', 'https://gemsessence.com/', target: '_blank' %>
+            </p>
+          </li>
+        </ol>
+      </section>
+      <section class="skill">
+        <h3 class="h3 skills-title">My skills</h3>
+        <ul class="skills-list content-card">
+          <li class="skills-item">
+            <div class="title-wrapper">
+              <h5 class="h5">Ruby On Rails</h5>
+              <data value="80">90%</data>
+            </div>
+            <div class="skill-progress-bg">
+              <div class="skill-progress-fill" style="width: 80%;"></div>
+            </div>
+          </li>
+          <li class="skills-item">
+            <div class="title-wrapper">
+              <h5 class="h5">React</h5>
+              <data value="70">50%</data>
+            </div>
+            <div class="skill-progress-bg">
+              <div class="skill-progress-fill" style="width: 70%;"></div>
+            </div>
+          </li>
+          <li class="skills-item">
+            <div class="title-wrapper">
+              <h5 class="h5">HTML, CSS, Bootstrap</h5>
+              <data value="90">90%</data>
+            </div>
+            <div class="skill-progress-bg">
+              <div class="skill-progress-fill" style="width: 90%;"></div>
+            </div>
+          </li>
+          <li class="skills-item">
+            <div class="title-wrapper">
+              <h5 class="h5">JavaScript And Jquery</h5>
+              <data value="50">80%</data>
+            </div>
+            <div class="skill-progress-bg">
+              <div class="skill-progress-fill" style="width: 50%;"></div>
+            </div>
+          </li>
+          <li class="skills-item">
+            <div class="title-wrapper">
+              <h5 class="h5">Version Control: Git</h5>
+              <data value="50">80%</data>
+            </div>
+            <div class="skill-progress-bg">
+              <div class="skill-progress-fill" style="width: 50%;"></div>
+            </div>
+          </li>
+          <li class="skills-item">
+            <div class="title-wrapper">
+              <h5 class="h5">SQL (MySQL)</h5>
+              <data value="50">80%</data>
+            </div>
+            <div class="skill-progress-bg">
+              <div class="skill-progress-fill" style="width: 50%;"></div>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </article>
+    <article class="portfolio" data-page="portfolio">
+      <header>
+        <h2 class="h2 article-title">Portfolio</h2>
+      </header>
+      <section class="projects">
+        <ul class="filter-list">
+          <li class="filter-item">
+            <button class="active" data-filter-btn>All</button>
+          </li>
+          <li class="filter-item">
+            <button data-filter-btn>Web development</button>
+          </li>
+        </ul>
+        <div class="filter-select-box">
+          <button class="filter-select" data-select>
+            <div class="select-value" data-selecct-value>Select category</div>
+            <div class="select-icon">
+              <ion-icon name="chevron-down"></ion-icon>
+            </div>
+          </button>
+          <ul class="select-list">
+            <li class="select-item">
+              <button data-select-item>Web development</button>
+            </li>
+          </ul>
+        </div>
+        <ul class="project-list">
+          <li class="project-item  active" data-filter-item data-category="web development">
+            <a target="_blank" href="https://uniguest.com/">
+              <figure class="project-img">
+                <div class="project-item-icon-box">
+                  <ion-icon name="eye-outline"></ion-icon>
+                </div>
+                <%= image_tag 'uc-view.png', alt: 'UNIGUEST'%>
+              </figure>
+              <h3 class="project-title">UC-VIEW by Uniguest: Leading Digital Display Solutions</h3>
+              <p class="project-category">Web development</p>
+            </a>
+          </li>
+          <li class="project-item  active" data-filter-item data-category="web development">
+            <a target="_blank" href="http://194.238.16.172:8080/">
+              <figure class="project-img">
+                <div class="project-item-icon-box">
+                  <ion-icon name="eye-outline"></ion-icon>
+                </div>
+                <%= image_tag 'paramatma.png', alt: 'UNIGUEST'%>
+              </figure>
+              <h3 class="project-title">Divine Insights: Sharing Wisdom from Enlightened Minds</h3>
+              <p class="project-category">Web development</p>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </article>
+    <%
+=begin%>
+ <article class="blog" data-page="blog">
+      <header>
+        <h2 class="h2 article-title">Blog</h2>
+      </header>
+      <section class="blog-posts">
+        <ul class="blog-posts-list">
+          <li class="blog-post-item">
+            <a href="#">
+              <figure class="blog-banner-box">
+                <%= image_tag 'blog-1.jpg', alt: 'Design conferences in 2022', loading: "lazy"%>
+              </figure>
+              <div class="blog-content">
+                <div class="blog-meta">
+                  <p class="blog-category">Design</p>
+                  <span class="dot"></span>
+                  <time datetime="2022-02-23">Fab 23, 2022</time>
+                </div>
+                <h3 class="h3 blog-item-title">Design conferences in 2022</h3>
+                <p class="blog-text">
+                  Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
+                </p>
+              </div>
+            </a>
+          </li>
+          <li class="blog-post-item">
+            <a href="#">
+              <figure class="blog-banner-box">
+                <%= image_tag 'blog-2.jpg', alt: 'Best fonts every designer', loading: "lazy"%>
+              </figure>
+              <div class="blog-content">
+                <div class="blog-meta">
+                  <p class="blog-category">Design</p>
+                  <span class="dot"></span>
+                  <time datetime="2022-02-23">Fab 23, 2022</time>
+                </div>
+                <h3 class="h3 blog-item-title">Best fonts every designer</h3>
+                <p class="blog-text">
+                  Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
+                </p>
+              </div>
+            </a>
+          </li>
+          <li class="blog-post-item">
+            <a href="#">
+              <figure class="blog-banner-box">
+                <%= image_tag 'blog-3.jpg', alt: 'Design digest #80', loading: "lazy"%>
+              </figure>
+              <div class="blog-content">
+                <div class="blog-meta">
+                  <p class="blog-category">Design</p>
+                  <span class="dot"></span>
+                  <time datetime="2022-02-23">Fab 23, 2022</time>
+                </div>
+                <h3 class="h3 blog-item-title">Design digest #80</h3>
+                <p class="blog-text">
+                  Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.
+                </p>
+              </div>
+            </a>
+          </li>
+          <li class="blog-post-item">
+            <a href="#">
+              <figure class="blog-banner-box">
+                <%= image_tag 'blog-4.jpg', alt: 'UI interactions of the week', loading: "lazy"%>
+              </figure>
+              <div class="blog-content">
+                <div class="blog-meta">
+                  <p class="blog-category">Design</p>
+                  <span class="dot"></span>
+                  <time datetime="2022-02-23">Fab 23, 2022</time>
+                </div>
+                <h3 class="h3 blog-item-title">UI interactions of the week</h3>
+                <p class="blog-text">
+                  Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
+                </p>
+              </div>
+            </a>
+          </li>
+          <li class="blog-post-item">
+            <a href="#">
+              <figure class="blog-banner-box">
+                <%= image_tag 'blog-5.jpg', alt: 'The forgotten art of spacing', loading: "lazy"%>
+              </figure>
+              <div class="blog-content">
+                <div class="blog-meta">
+                  <p class="blog-category">Design</p>
+                  <span class="dot"></span>
+                  <time datetime="2022-02-23">Fab 23, 2022</time>
+                </div>
+                <h3 class="h3 blog-item-title">The forgotten art of spacing</h3>
+                <p class="blog-text">
+                  Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </div>
+            </a>
+          </li>
+          <li class="blog-post-item">
+            <a href="#">
+              <figure class="blog-banner-box">
+                <%= image_tag 'blog-6.jpg', alt: 'Design digest #79', loading: "lazy"%>
+              </figure>
+              <div class="blog-content">
+                <div class="blog-meta">
+                  <p class="blog-category">Design</p>
+                  <span class="dot"></span>
+                  <time datetime="2022-02-23">Fab 23, 2022</time>
+                </div>
+                <h3 class="h3 blog-item-title">Design digest #79</h3>
+                <p class="blog-text">
+                  Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
+                </p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </article> 
+<%
+=end%>
+    <article class="contact" data-page="contact">
+      <header>
+        <h2 class="h2 article-title">Contact</h2>
+      </header>
+      <section class="mapbox" data-mapbox>
+      <figure>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m25!1m12!1m3!1d74836.65050432137!2d75.81645921299354!3d22.709984324699377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m10!3e6!4m4!2s22.7100643%2C%2075.8576328!3m2!1d22.7100643!2d75.85763279999999!4m3!3m2!1d22.7100643!2d75.85763279999999!5e1!3m2!1sen!2sin!4v1723713809976!5m2!1sen!2sin" 
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </figure>
+
+      </section>
+      <section class="contact-form">
+        <h3 class="h3 form-title">Contact Form</h3>
+        <%= form_with(url: contact_form_home_index_url, method: 'post', class: 'contact-form') do |form| %>
+          <%= form.hidden_field :authenticity_token, value: form_authenticity_token %>
+          <div class="input-wrapper">
+            <div class="input-group" data-id="full-name">
+              <%= form.label :full_name, 'Full Name' %>
+              <%= form.text_field :full_name, id: 'full-name', placeholder: 'Full name', required: true, class: 'form-input' %>
+            </div>
+            <div class="input-group" data-id="email">
+              <%= form.label :email, 'Email Address' %>
+              <%= form.email_field :email, id: 'email', placeholder: 'Email address', required: true, class: 'form-input' %>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="input-group" data-id="message">
+              <%= form.label :message, 'Your Message' %>
+              <%= form.text_area :message, id: 'message', 
+                placeholder: 'Hi, Company X is looking to enhance its digital presence with a new website. Can we schedule a meeting to explore this opportunity further ?', 
+                required: true, rows: 7, minlength: 30, class: 'form-input' 
+              %>
+            </div>
+          </div>
+          <button class="form-btn" type="submit">
+            <ion-icon name="paper-plane"></ion-icon>
+            <span>Send Message</span>
+          </button>
+        <% end %>
+      </section>
+    </article>
+  </div>
+</main>
