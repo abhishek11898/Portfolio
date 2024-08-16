@@ -1,0 +1,52 @@
+# Default Rails .gitignore file
+
+# Ignore bundler config.
+.bundle/
+
+# Ignore all logfiles and tempfiles.
+log/
+tmp/
+
+# Ignore database config.
+config/database.yml
+
+# Ignore environment variables.
+config/credentials.yml.enc
+config/credentials/production.key
+
+# Ignore any other sensitive or private files.
+.env
+
+# Ignore byebug command history file.
+.byebug_history
+
+# Ignore system-specific files.
+.DS_Store
+*.swp
+*.swo
+
+# Ignore Node.js modules.
+node_modules/
+
+# Ignore Yarn and npm logs.
+yarn-error.log
+npm-debug.log
+
+# Ignore all files in the public directory except for images.
+public/uploads
+
+# Ignore compiled assets.
+public/assets
+public/packs
+
+# Ignore server and test-related files.
+coverage/
+spec/reports/
+test/tmp/
+test/fixtures/
+
+# Ignore the PostgreSQL database dump file.
+*.sql
+
+# Ignore the Spring application preloader.
+spring/
